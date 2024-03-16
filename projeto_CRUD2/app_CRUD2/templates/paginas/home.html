@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funcionou</title>
-</head>
-<body>
+  </head>
+  <body>
+    <p>Foooi</p>
+    <p>Testando a exibição da classe do banco de dados</p>
+    <h1>Lista de Tarefas</h1>
 
-        <p>Foooi</p>
-        <p>Branc_teste criada</p>
-
-
-</body>
+    <ul>
+      {%for bancoDeDados_variavel in bancoDeDados_obj%}
+      <li>{{bancoDeDados_variavel.title}}</li>
+      {%endfor%}
+    </ul>
+  </body>
 </html>
