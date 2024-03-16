@@ -4,5 +4,5 @@ from app_CRUD2 import views
 
 
 urlpatterns = [
-    path('', views.home, name='home.html'),
+    path("", views.home, name="home.html"),
 ]
